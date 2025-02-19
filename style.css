@@ -94,7 +94,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido horizontalmente */
-    padding: 100px 20px 20px; /* Agregar un poco de padding */
+    padding: 100px 20px 21px; /* Agregar un poco de padding */
 }
 
 .inicio .contenido-banner {
