@@ -21,6 +21,7 @@ html{
     top: 0;
     left: 0;
     z-index: 99;
+    height:80px;
 }
 .contenedor-header header{
     max-width: 1100px;
@@ -28,7 +29,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 10px;
 }
 
 .contenedor-header header .logo img {
@@ -93,11 +94,12 @@ html{
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Agregar un poco de padding */
+    padding: 100px 20px 20px; /* Agregar un poco de padding */
 }
 
 .inicio .contenido-banner {
-    padding: 20px;
+    
+    padding: 10px;
     background-color: #97D3CD;
     max-width: 300px;
     margin: auto;
