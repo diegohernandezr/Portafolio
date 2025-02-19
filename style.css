@@ -1,0 +1,853 @@
+/* Importar fuente correctamente */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'work sans';
+    margin: 0;
+    padding: 0;
+}
+
+/* permite deslizamiento al hacer click en los links del nav*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*********** Inicio Menú Navbar ******************/
+.contenedor-header{
+    background-color: #E4F2EA;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo img {
+    font-family: 'Righteous';
+    color: #2D564D;
+    text-decoration: none;
+    width: 60px;  /* Ajusta el tamaño según lo que necesites */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto al pasar el ratón */
+.contenedor-header header .logo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor */
+    opacity: 0.9; /* Le da un efecto de opacidad */
+}
+
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #2D564D;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #97D3CD;
+}
+
+.nav-responsive{
+    background-color: #2D564D;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-responsive:hover{
+    background-color: #97D3CD;
+    color: #2D564D;
+
+}
+
+/************ Final del Navbar *****************/
+
+
+/*********** Sección de Inicio  ******************/
+
+.inicio{
+    background: linear-gradient(135deg, #E4F2EA, #A1C6B9);
+    background-size: cover;
+    min-height: 100vh; /* Cambié 100vh por min-height */
+    color: #0C2C47;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Agregar un poco de padding */
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #97D3CD;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out; /* Suaviza la animación de todos los cambios */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.inicio .contenido-banner:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del contenedor */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar el contenedor */
+    background-color: #86B5A1; /* Cambio de color de fondo */
+}
+
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border:  10px solid #E4F2EA;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top:  40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #0C2C47;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #E4F2EA;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #E4F2EA;
+}
+
+/*********** Fini Sección de Inicio  ******************/
+
+/*********** Sección de Sobre mí  ******************/
+.sobremi{
+    background: linear-gradient(220deg, #A1C6B9, #E4F2EA);
+    background-size: cover;
+    min-height: 100vh; /* Cambié 100vh por min-height */
+    color: #0C2C47;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centra todo el contenido en columna */
+}
+
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    width: 100%;  /* Asegura que ocupe el 100% del contenedor */
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #2D564D;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sobremi .fila{
+    display: flex;
+    flex-wrap: wrap; /* Agregado para permitir que los elementos se ajusten */
+}
+
+.sobremi .fila .col{
+    width: 50%;
+    padding: 10px; /* Agregado para mejorar el espaciado */
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #2D564D;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #97D3CD;
+    padding: 3px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    color: #0C2C47;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #97D3CD;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #E2A54D;
+}
+
+.sobremi .fila .col .contenedor-intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #97D3CD;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #0C2C47;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #97D3CD;
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+    
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+
+}
+
+
+/***************************** Sección Skills *******************/  
+
+.skills {
+    background: linear-gradient(155deg, #E4F2EA, #A1C6B9);
+    background-size: cover;
+    min-height: 100vh; /* Cambié 100vh por min-height */
+    color: #0C2C47;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex-direction: column; /* Centra los elementos en columna */
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    width: 100%;  /* Asegura que ocupe el 100% del contenedor */
+    height: auto; /* Ajusta la altura según el contenido */
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #0C2C47;
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'righteous';
+    margin-bottom: 25px;
+    color: #2D564D;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 95%;
+    background-color: #97D3CD;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skills .skill .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #E2A54D;
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: center;
+    color: #E4F2EA;
+    top: -17px;
+    right: -15px;
+    font-size: 13px;
+}
+ /* Aqui se agragan clases dinamicas con JS */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .CSS{
+    width: 0%;
+    animation: 2s CSS forwards;
+}
+
+@keyframes CSS{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .Figma{
+    width: 0%;
+    animation: 2s Figma forwards;
+}
+
+@keyframes Figma{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .Photoshop{
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+
+@keyframes Photoshop{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .Jitra{
+    width: 0%;
+    animation: 2s Jitra forwards;
+}
+
+@keyframes Jitra{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .Comunicación{
+    width: 0%;
+    animation: 2s Comunicación forwards;
+}
+
+@keyframes Comunicación{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .Trabajo{
+    width: 0%;
+    animation: 2s Trabajo forwards;
+}
+
+@keyframes Trabajo{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .Atención{
+    width: 0%;
+    animation: 2s Atención forwards;
+}
+
+@keyframes Atención{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+
+@keyframes Creatividad{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .management{
+    width: 0%;
+    animation: 2s management forwards;
+}
+
+@keyframes management{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .Proactivo{
+    width: 0%;
+    animation: 2s Proactivo forwards;
+}
+
+@keyframes Proactivo{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+/*Seccion Curriculum */
+
+.curriculum{
+    background: linear-gradient(53deg, #E4F2EA, #A1C6B9);
+    color: #0C2C47;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column; /* Cambié esto para que los elementos estén en columna */
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculum .contenido-curriculum{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'righteous';
+    margin-bottom: 25px;
+    color: #2D5652;
+}
+
+.curriculum .fila .izquierda{
+    border-right: 2px solid #0C2C47;
+}
+
+.curriculum .fila .derecha{
+    border-left: 2px solid #0C2C47;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #97D3CD;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el movimiento y sombra */
+}
+
+.curriculum .fila .item:hover {
+    transform: translateY(-5px); /* Movimiento hacia arriba */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0C2C47;
+}
+
+.curriculum .fila .item .casa{
+    color: #0C2C47;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.curriculum .fila .item p{
+    line-height: 24px;
+    color: #0C2C47;
+}
+
+.curriculum .fila .izq{
+    border-right:  4px solid #0C2C47;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der{
+    border-left:  4px solid #0C2C47;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #0C2C47;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #0C2C47;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #0C2C47;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #0C2C47;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/*SECCION PORTAFOLIO */
+
+.portfolio{
+    background: linear-gradient(155deg, #E4F2EA, #A1C6B9);
+    color: #0C2C47;
+    padding: 100px 20px;
+    max-width: auto;
+    margin: auto;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px; /* Añade espacio alrededor para mejorar la visualización */
+}
+
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+    gap: 25px; /* Espaciado uniforme */
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Aumenta el tamaño máximo de las tarjetas */
+    min-height: 400px; /* Aumenta la altura mínima */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio .galeria .proyecto:hover img {
+    transform: scale(1.2); /* Hace zoom en la imagen */
+}
+
+@media (min-width: 600px) {
+    .portfolio .galeria .proyecto {
+        width: calc(50% - 20px); /* 2 columnas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio .galeria .proyecto {
+        width: calc(33.33% - 20px); /* 3 columnas */
+    }
+}
+
+
+
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/*Seccion Footer */
+
+footer{
+    background: linear-gradient(10deg, #E4F2EA, #A1C6B9);
+    color: #000000;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 0px;
+}
+
+footer .redes a {
+    color: #0C2C47;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0C2C47;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+
+/* Efecto hover */
+footer .redes a:hover {
+    background-color: #0C2C47; /* Cambiar el fondo al hacer hover */
+    color: white; /* Cambiar color del icono al hacer hover */
+    transform: scale(1.2); /* Aumentar el tamaño del icono */
+}
+
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #110453;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* Seccion Responsive */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #ffffff;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+     border-bottom: 1px solid #fff;
+     padding: 10px 0;   
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* Ajuste para la sección .skills */
+    .skills {
+        padding: 40px 10px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .skills .fila {
+        display: block;
+        width: 100%;
+    }
+
+    .skills .fila .col {
+        width: 100%; /* columnas ocupen todo el ancho */
+    }
+
+    .curriculum {
+        padding: 40px 10px; /*padding en pantallas pequeñas */
+    }
+
+    .curriculum .fila {
+        display: block;
+        width: 100%;
+    }
+
+    .curriculum .fila .col {
+        width: 100%; /* Asegura que las columnas ocupen todo el ancho */
+    }
+    
+}
+
+
+
+
+/***************************** min 52 https://www.youtube.com/watch?v=2s19KJq49rQ *******************/ 
+
+/*****************************min 57:06 https://www.youtube.com/watch?v=2s19KJq49rQ ************/
+
+/******************* min 1:39:16 https://www.youtube.com/watch?v=2s19KJq49rQ *******************/
+
+/******************COMO CONECTAR A UN SERVIDOR Y GITHUB https://www.youtube.com/watch?v=oevc88YiYz4 ******************/
+/*************************COMO CONECTAR A UN SERVIDOR Y GITHUB 2 https://www.youtube.com/watch?v=aaEeEpOC-EQ *************************/

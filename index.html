@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.csss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--header-->
+  <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <!-- <a href="#">Diego</a> -->
+             <img src="/Imagenes/logo.svg" alt="">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar ()" >Inicio</a></li>
+                <li><a href="#sobremi" onclick="seleccionar ()" >Acerca de mi</a></li>
+                <li><a href="#skills" onclick="seleccionar ()">Habilidades</a></li>
+                <li><a href="#curriculum" onclick="seleccionar ()">Experiencia</a></li>
+                <li><a href="/HTML/proyectos.html" onclick="seleccionar ()" >Proyectos</a></li>
+                <!-- <li><a href="#contacto">Contacto</a></li> -->
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu ()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+  </div>
+  
+  <!--Inicio-->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="/Imagenes/Imagen_diego.png" alt="">
+        </div>
+        <h1>Diego Hernández</h1>
+        <h2>Diseñador Ux - Front End Jr</h2>
+        <div class="redes">
+            <a href="https://www.instagram.com/diego_uxui/profilecard/?igsh=aG1hc3lvOTJ3bWN0" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/diegohernandezrodriguez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.behance.net/diegorodriguez25" target="_blank" ><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://github.com/diegohernandezr" target="_blank" ><i class="fa-brands fa-square-git"></i></a>
+
+        </div>
+
+    </div>
+  </section>
+
+  <!--Acerca de mí-->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Acerca de mi</h2>
+        <p><span>Hola! Soy Diego Hernández 👋</span> <br><br>
+            Soy un apasionado Diseñador UX y Desarrollador Java Junior, 
+            constantemente desarrollando mis habilidades en Desarrollo Web.
+            Me encanta crear experiencias digitales que combinan estética con funcionalidad,
+            mi enfoque está en desarrollar interfaces intuitivas y atractivas que resuelvan de
+            manera efectiva problemas del mundo real.<br><br>
+            Con un ojo atento a la experiencia del usuario, disfruto fusionando el dinamismo del diseño con la precisión del código. Me esfuerzo por optimizar cada interacción para hacer la tecnología más accesible, atractiva y funcional. Mi objetivo es crear soluciones que no solo sean robustas, sino que también ofrezcan una experiencia fluida y agradable para los usuarios.</p>
+    <div class="fila">
+        <!-- Datos personales-->
+        <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>
+                    <strong>Cumpleaños</strong>
+                    19 de Octubre de 1994
+                </li>
+                <li>
+                    <strong>Telefono</strong>
+                    +52 313 147 98 49
+                </li>
+                <li>
+                    <strong>Email</strong>
+                    diegohrnz12@gmail.com
+                </li>
+                <li>
+                    <strong>Website</strong>
+                    <a href="https://www.behance.net/diegorodriguez25" target="_blank">www.Behance-Diego.com</a>
+                </li>
+                <li>
+                    <strong>Dirección</strong>
+                    Zapopa, Jalisco, Mexico.
+                </li>
+                <li>
+                    <strong>Cargo</strong>
+                    <span>Diseñador UX</span>
+                </li>
+            </ul>
+        
+        </div>
+        <!-- Intereses-->
+        <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+                <div class="intereses">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Juegos</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Musica</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-plane"></i>
+                    <span>Viajes</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Libros</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Fotografia</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Mascotas</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>Ejercicio</span>
+                </div>
+                <div class="intereses">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Tecnología</span>
+                </div>
+
+                
+            </div>
+        
+        </div>
+         
+
+    </div>
+    <button id="downloadButton">
+        descargar cv <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+    </button>
+    </div>
+  </section>
+
+   <!--skills-->
+   <section class="skills" id="skills">
+    <div class="contenido-seccion" onscroll="efectoHabilidades ()">
+        <h2>Habilidades</h2>
+        <div class="fila">
+            <!-- Technical skills-->
+             <div class="col">
+                <h3>Technical skills</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>html</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Figma</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Photoshop</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Jitra</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+
+             <!-- Professional skills-->
+             <div class="col">
+                <h3>Professional skills</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Atención al detalle</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Project management</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Proactivo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+
+             </div> 
+              
+
+        </div>
+    </div>
+   </section>
+
+   <!--Curriculum-->
+   <section id="curriculum" class="curriculum">
+    <div class="contenido-sección">
+        <h2>curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Diseño y Arquitectura </h4>
+                    <span class="casa">Universidad de Colima</span>
+                    <span class="Fecha">2015-2019</span>
+                    <p>Creación de soluciones visuales innovadoras. 
+                        Mi formación me permitió combinar creatividad y técnica para desarrollar
+                         proyectos de diseño con enfoque funcional y estético.".</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                </div>
+                <div class="item izq">
+                    <h4>Diseño </h4>
+                    <span class="casa">Universidad de Alicante</span>
+                    <span class="Fecha">2016-2017</span>
+                    <p>Realicé un año académico en la Universidad de Alicante, España, en la carrera de Diseño. Durante este período,
+                         amplié mis conocimientos y habilidades en diversas áreas del diseño, enriqueciendo mi enfoque creativo y profesional.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                </div>
+                <div class="item izq">
+                    <h4> Desarrollador FullStack </h4>
+                    <span class="casa">Generation Mexico</span>
+                    <span class="Fecha">2023-2024</span>
+                    <p>Bootcamp de Desarrollador Fullstack en Generation México, con una duración de 8 meses. Durante el programa,
+                         adquirí habilidades en programación, 
+                        desarrollo web y manejo de tecnologías modernas para crear soluciones digitales completas.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                </div>
+                <div class="item izq">
+                    <h4> Desarrollador Web </h4>
+                    <span class="casa">Oracle Mexico</span>
+                    <span class="Fecha">2023-2024</span>
+                    <p>Realicé estudios en desarrollo web en Oracle México, con un enfoque en backend y
+                         ciencia de datos. A lo largo del programa, profundicé en el manejo de bases de datos, 
+                        programación de servidores y análisis de datos para desarrollar soluciones tecnológicas avanzadas.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                </div>
+                <div class="item izq">
+                    <h4> Desarrollo en sistemas Web </h4>
+                    <span class="casa">Universidad de Guadalajara - Cursando</span>
+                    <span class="Fecha">2024-Presente</span>
+                    <p>carrera de Desarrollo Web en línea en la Universidad de Guadalajara. Estoy ampliando mis conocimientos en programación, 
+                        diseño web y tecnologías emergentes para crear soluciones digitales de alto impacto.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia Laboral</h3>
+                <div class="item der">
+                    <h4>Diseñador de experiencia de usuario</h4>
+                    <span class="casa">IMJ Media</span>
+                    <span class="Fecha">2024 - Presente</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ipsam labore.
+                         Dicta, doloribus esse a amet commodi libero deleniti veritatis nulla voluptate accusantium 
+                         rerum aliquam perferendis. Numquam, laudantium voluptatibus.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseñador de interfaces</h4>
+                    <span class="casa">Imec Sa de CV</span>
+                    <span class="Fecha">2020-2023</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ipsam labore.
+                         Dicta, doloribus esse a amet commodi libero deleniti veritatis nulla voluptate accusantium 
+                         rerum aliquam perferendis. Numquam, laudantium voluptatibus.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                </div>
+                <div class="item der">
+                    <h4> Diseñador UX </h4>
+                    <span class="casa">Coder House</span>
+                    <span class="Fecha">2023-2024</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ipsam labore.
+                         Dicta, doloribus esse a amet commodi libero deleniti veritatis nulla voluptate accusantium 
+                         rerum aliquam perferendis. Numquam, laudantium voluptatibus.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                </div>
+                <div class="item der">
+                    <h4> Diseñador UX  </h4>
+                    <span class="casa">Freelance</span>
+                    <span class="Fecha">2023-2024</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ipsam labore.
+                         Dicta, doloribus esse a amet commodi libero deleniti veritatis nulla voluptate accusantium 
+                         rerum aliquam perferendis. Numquam, laudantium voluptatibus.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Portafolio-->
+    <!-- <section id="portfolio" class="portfolio"> 
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO 2.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO 3.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO 4.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO 5.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/OBP INICIO 2.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+
+            </div>
+        </div>
+
+    </section> -->
+
+    <!--Contacto-->
+   <!-- <Section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+             <!-- <div class="col">
+                <input type="text" placeholder="Tu nombre">
+                <input type="text" placeholder="Número de telefono">
+                <input type="text" placeholder="Direccion de correo">
+                <input type="text" placeholder="tema">
+                <textarea name="" id="" cols="30" placeholder="escribe tu mensaje"></textarea>
+                <button>
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+             </div> -->
+            <!-- mapa -->
+             <!-- <div class="col">
+                <img src="/Imagenes/ubicación.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Zapopan Jalisco, Loma linda 6141
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            WhatsApp +52 3131479848
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: diegohrnz12@gmail.com
+                        </li>
+                    </ul>
+                </div> -->
+<!-- 
+             </div>
+
+        </div>
+    </div>
+   </Section> -->
+   <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/diego_uxui/profilecard/?igsh=aG1hc3lvOTJ3bWN0" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/diegohernandezrodriguez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.behance.net/diegorodriguez25" target="_blank" ><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://github.com/diegohernandezr" target="_blank" ><i class="fa-brands fa-square-git"></i></a>
+        </div>
+    </footer>
+
+    <script src="funciones.js"></script>
+    
+
+
+
+
+</body>
+</html>

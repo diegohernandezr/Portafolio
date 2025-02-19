@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--header-->
+  <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <!-- <a href="#">Diego</a> -->
+             <img src="/Imagenes/logo.svg" alt="">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="/HTML/index.html" onclick="seleccionar ()" >Inicio</a></li>
+                <li><a href="/HTML/index.html" onclick="seleccionar ()" >Acerca de mi</a></li>
+                <li><a href="/HTML/index.html" onclick="seleccionar ()">Habilidades</a></li>
+                <li><a href="/HTML/index.html" onclick="seleccionar ()">Experiencia</a></li>
+                <li><a href="#portfolio" onclick="seleccionar ()" >Proyectos</a></li>
+                <!-- <li><a href="#contacto">Contacto</a></li> -->
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu ()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+  </div>
+
+   <!--Portafolio-->
+    <section id="portfolio" class="portfolio"> 
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="/Imagenes/UserFlow.gif" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/campaña 2.gif">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/campaña 2.gif" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/UserFlow.gif" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/UserFlow.gif" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+                    <div class="proyecto">
+                        <img src="/Imagenes/campaña 2.gif" alt="">
+                        <div class="overlay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografía</p>
+                        </div>    
+                    </div>
+
+            </div>
+        </div>
+
+    </section>
+
+   <!-- FOOTER -->
+    <footer>
+        <a href="#portfolio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/diego_uxui/profilecard/?igsh=aG1hc3lvOTJ3bWN0" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/diegohernandezrodriguez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.behance.net/diegorodriguez25" target="_blank" ><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://github.com/diegohernandezr" target="_blank" ><i class="fa-brands fa-square-git"></i></a>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
