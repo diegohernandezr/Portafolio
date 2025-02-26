@@ -637,7 +637,7 @@ html{
 
 .portfolio{
     background: linear-gradient(155deg, #E4F2EA, #A1C6B9);
-    color: #0C2C47;
+    color: #ffffff;
     padding: 100px 20px;
     max-width: auto;
     margin: auto;
@@ -654,7 +654,14 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    
 }
+
+.portfolio h3, p{
+    color: #ffffff;   
+}
+
+
 
 .portfolio .galeria {
     display: flex;
